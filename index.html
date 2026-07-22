@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chris Lund — Resume</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0a1628; color:#c8d8e8; font-family:'Inter',sans-serif; padding:40px 20px; }
+  .container { max-width:720px; margin:0 auto; }
+  .header { text-align:center; margin-bottom:32px; }
+  .header h1 { color:#eaf2ff; font:900 32px Inter; }
+  .header .contact { color:rgba(180,200,230,0.7); font:13px 'JetBrains Mono',monospace; margin-top:6px; }
+  .header .contact a { color:#4da6ff; text-decoration:none; }
+  .section { margin-bottom:28px; }
+  .section h2 { color:#4da6ff; font:bold 14px 'JetBrains Mono',monospace; border-bottom:1px solid rgba(77,166,255,0.2); padding-bottom:4px; margin-bottom:12px; }
+  .job { margin-bottom:16px; }
+  .job h3 { color:#eaf2ff; font:bold 16px Inter; }
+  .job .meta { color:#ffb84d; font:13px Inter; margin-bottom:4px; }
+  .job ul { list-style:none; padding-left:0; }
+  .job li { color:rgba(200,215,235,0.8); font:14px Inter; line-height:1.6; padding-left:16px; position:relative; }
+  .job li::before { content:'▸'; color:#4da6ff; position:absolute; left:0; font-size:12px; }
+  .skills { display:flex; flex-wrap:wrap; gap:8px; }
+  .skills span { background:rgba(77,166,255,0.1); border:1px solid rgba(77,166,255,0.2); color:#4da6ff; font:12px 'JetBrains Mono',monospace; padding:4px 10px; border-radius:4px; }
+  .footer { text-align:center; color:rgba(180,200,230,0.4); font:12px Inter; margin-top:40px; padding-top:20px; border-top:1px solid rgba(77,166,255,0.1); }
+  .footer a { color:rgba(77,166,255,0.6); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>Chris Lund</h1>
+  <div class="contact">
+    Duluth, MN &nbsp;•&nbsp; (218) 341-6225 &nbsp;•&nbsp; <a href="mailto:legion@legionslab.com">legion@legionslab.com</a><br>
+    <a href="https://github.com/realMNohgee" target="_blank">github.com/realMNohgee</a> &nbsp;•&nbsp; <a href="https://hermtica.com" target="_blank">hermtica.com</a> &nbsp;•&nbsp; <a href="https://legionslab.com" target="_blank">legionslab.com</a>
+  </div>
+</div>
+
+<div class="section">
+  <h2>$ cat ./summary.txt</h2>
+  <p style="line-height:1.6;color:rgba(200,215,235,0.85);">
+    Construction project manager and self-taught developer building at the intersection of AI, cybersecurity, and real-world operations. 
+    Founder of <strong style="color:#eaf2ff;">Hermtica</strong> — an open marketplace with 97 zero-dependency CLI tools for AI agents. 
+    Bug bounty hunter with experience probing frontier LLM safety systems. Security+ candidate. 
+    Seeking a high-leverage role where construction domain expertise meets AI deployment.
+  </p>
+</div>
+
+<div class="section">
+  <h2>$ cat ./experience.log</h2>
+
+  <div class="job">
+    <h3>Founder & CEO</h3>
+    <div class="meta">Hermtica — Remote &nbsp;|&nbsp; 2025–Present</div>
+    <ul>
+      <li>Built and launched hermtica.com — an open, agent-agnostic marketplace for AI agent tools</li>
+      <li>Shipped 97 Python CLI tools (zero dependencies, MIT-licensed) for AI security, testing, and operations</li>
+      <li>Designed platform architecture on Next.js, Vercel, and Turso; integrated Stripe payments and OAuth authentication</li>
+      <li>Maintains all marketplace listings, GitHub repositories, and community engagement</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Lead Carpenter — QC & Project Management</h3>
+    <div class="meta">Leacox Construction — Superior, WI &nbsp;|&nbsp; 2023–2024</div>
+    <ul>
+      <li>Led exterior construction projects with precision quality control — LP Smart siding, vinyl siding, decks</li>
+      <li>Managed materials and tools under tight deadlines, demonstrating attention to detail in high-risk environments</li>
+      <li>Collaborated with owner on project planning, resolving on-site issues with rapid problem-solving</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Owner & Lead Carpenter</h3>
+    <div class="meta">A2Z Construction LLC — Duluth, MN &nbsp;|&nbsp; 2019–Present</div>
+    <ul>
+      <li>Directed all marketing, operations, sales, hiring, and training for a team of 10+</li>
+      <li>Ensured projects met strict tolerances (within 1/16 inch) — precision-driven QC mindset</li>
+      <li>Led safety compliance and risk management across all job sites</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Carpenter — Commercial Infrastructure</h3>
+    <div class="meta">Northland Constructors — Duluth, MN &nbsp;|&nbsp; 2013–2019</div>
+    <ul>
+      <li>Built train bridges and large-scale infrastructure with rigorous safety and precision standards</li>
+      <li>Solved unforeseen issues on complex projects with creative, on-the-spot problem-solving</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section">
+  <h2>$ ls ./skills/</h2>
+  <div class="skills">
+    <span>Python 3</span><span>Ruby</span><span>JavaScript</span><span>Node.js</span><span>PHP</span>
+    <span>SQL</span><span>Git/GitHub</span><span>AWS</span><span>Vercel</span><span>Next.js</span>
+    <span>Wireshark</span><span>Nmap</span><span>SIEM</span><span>IDS/IPS</span>
+    <span>Vulnerability Scanning</span><span>Incident Response</span><span>Threat Detection</span>
+    <span>Project Management</span><span>Team Leadership</span><span>QC/QA</span>
+    <span>API Development</span><span>Stripe</span><span>OAuth</span>
+  </div>
+</div>
+
+<div class="section">
+  <h2>$ cat ./education.log</h2>
+  <p style="color:rgba(200,215,235,0.8);line-height:1.6;">
+    <strong style="color:#eaf2ff;">A.A.S. General Studies</strong> — Minneapolis Community & Technical College (2005–2008)<br>
+    <strong style="color:#eaf2ff;">Security+ (SY0-701)</strong> — In Progress
+  </p>
+</div>
+
+<div class="footer">
+  Generated for <a href="https://structuredai-game.vercel.app">REDLINE</a> — a StructuredAI applicant experience &nbsp;|&nbsp; Chris Lund © 2026
+</div>
+
+</div>
+</body>
+</html>
